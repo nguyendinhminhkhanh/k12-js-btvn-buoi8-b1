@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+}
+.box{
+    width: 60%;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.image{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+}
+.image img{
+    width: 100%;
+    transition: all 0.5s;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.image img:hover{
+    border: 2px solid red;
+
+}
+.image:hover img:not(:hover){
+    opacity: 0.5;
+    transition: all 0.5s;
+    box-sizing: border-box;
+}
